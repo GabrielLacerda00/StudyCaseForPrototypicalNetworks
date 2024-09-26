@@ -1,0 +1,16 @@
+Comando para split do dataset:
+sudo python3 protonets/utils/create_splits2.py --data_dir data/new_dataset/data --split_dir /data/new_dataset/splits/new_split
+#split01 0.50 0.25 0.25
+#split02 0.40 0.20 0.40
+-----------------------
+#split03 0.50 0.20 0.30
+#split04 0.50 0.30 0.20
+
+Comando para treinamento do modelo:
+python3 scripts/train/few_shot/run_train_test.py --data.cuda
+
+Comando para retreinamento(trainl+val):
+python3 scripts/train/few_shot/run_trainval.py
+
+Comando para teste:
+python3 scripts/predict/few_shot/run_evalmetrics.py
