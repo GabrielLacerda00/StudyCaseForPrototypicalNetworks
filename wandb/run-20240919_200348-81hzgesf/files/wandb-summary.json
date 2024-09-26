@@ -1,0 +1,1 @@
+{"gpu_memory_usage_mb": 1630.5, "_timestamp": 1726787368.9152157, "_runtime": 340.1382336616516, "_step": 28967, "loss": 7.712146628648496e-05, "acc": 1.0, "_wandb": {"runtime": 339}}

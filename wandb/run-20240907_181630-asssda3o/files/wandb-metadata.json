@@ -1,0 +1,175 @@
+{
+    "os": "Linux-6.8.0-40-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-09-07T21:16:31.248552",
+    "startedAt": "2024-09-07T21:16:30.607101",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--data.dataset",
+        "new_dataset",
+        "--data.split",
+        "new_split",
+        "--data.way",
+        "5",
+        "--data.shot",
+        "5",
+        "--data.query",
+        "5",
+        "--data.test_way",
+        "5",
+        "--data.test_shot",
+        "0",
+        "--data.test_query",
+        "0",
+        "--data.train_episodes",
+        "100",
+        "--data.test_episodes",
+        "100",
+        "--data.trainval",
+        "--data.cuda",
+        "--model.model_name",
+        "protonet_conv",
+        "--model.x_dim",
+        "1,28,28",
+        "--model.hid_dim",
+        "224",
+        "--model.z_dim",
+        "224",
+        "--train.epochs",
+        "631",
+        "--train.optim_method",
+        "Adam",
+        "--train.learning_rate",
+        "0.001",
+        "--train.decay_every",
+        "20",
+        "--train.weight_decay",
+        "0.0",
+        "--train.patience",
+        "200",
+        "--log.fields",
+        "loss,acc",
+        "--log.exp_dir",
+        "results/trainval"
+    ],
+    "state": "running",
+    "program": "/home/lpc/Downloads/prototypical-networks/prototypical-networks/scripts/train/few_shot/run_train_test.py",
+    "codePathLocal": "scripts/train/few_shot/run_train_test.py",
+    "codePath": "scripts/train/few_shot/run_train_test.py",
+    "git": {
+        "remote": "https://github.com/jakesnell/prototypical-networks.git",
+        "commit": "c9bb4d258267c11cb6e23f0a19242d24ca98ad8a"
+    },
+    "email": null,
+    "root": "/home/lpc/Downloads/prototypical-networks/prototypical-networks",
+    "host": "lpc-System-Product-Name",
+    "username": "lpc",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 4149.195125,
+        "min": 400.0,
+        "max": 4673.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4524.795,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3618.038,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 4444.222,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3620.704,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3619.268,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 4077.099,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3617.819,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 4525.845,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 4540.859,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3612.761,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 4057.81,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3621.015,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3617.226,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3619.471,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3612.07,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 4532.486,
+            "min": 400.0,
+            "max": 4673.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 808.95361328125,
+            "used": 4.8564453125
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 31.13707733154297
+    }
+}

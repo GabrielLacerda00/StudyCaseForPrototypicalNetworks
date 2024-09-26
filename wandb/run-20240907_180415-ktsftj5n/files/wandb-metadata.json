@@ -1,0 +1,130 @@
+{
+    "os": "Linux-6.8.0-40-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-09-07T21:04:15.697924",
+    "startedAt": "2024-09-07T21:04:15.021045",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--data.cuda"
+    ],
+    "state": "running",
+    "program": "/home/lpc/Downloads/prototypical-networks/prototypical-networks/scripts/train/few_shot/run_train_test.py",
+    "codePathLocal": "scripts/train/few_shot/run_train_test.py",
+    "codePath": "scripts/train/few_shot/run_train_test.py",
+    "git": {
+        "remote": "https://github.com/jakesnell/prototypical-networks.git",
+        "commit": "c9bb4d258267c11cb6e23f0a19242d24ca98ad8a"
+    },
+    "email": null,
+    "root": "/home/lpc/Downloads/prototypical-networks/prototypical-networks",
+    "host": "lpc-System-Product-Name",
+    "username": "lpc",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 4273.0320624999995,
+        "min": 400.0,
+        "max": 4673.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3597.967,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3594.863,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3599.068,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 4499.402,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3596.813,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3590.622,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 4403.768,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3598.536,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3599.769,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3598.407,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3598.329,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 4499.701,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3593.95,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3602.669,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 4330.651,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3582.202,
+            "min": 400.0,
+            "max": 4673.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 808.9759521484375,
+            "used": 4.8564453125
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 31.13707733154297
+    }
+}

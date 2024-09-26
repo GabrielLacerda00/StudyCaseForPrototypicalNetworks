@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/home/lpc/Downloads/prototypical-networks/prototypical-networks/scripts/train/few_shot/run_train_test.py", line 69, in <module>
+    main(args)
+  File "/home/lpc/Downloads/prototypical-networks/prototypical-networks/scripts/train/few_shot/train_testWB.py", line 53, in main
+    data = data_utils.load(opt, ['trainval'])
+  File "/home/lpc/.local/lib/python3.10/site-packages/protonets/utils/data.py", line 8, in load
+    ds = protonets.data.custom_data_loader.load_data(opt, splits)
+  File "/home/lpc/.local/lib/python3.10/site-packages/protonets/data/custom_data_loader.py", line 109, in load_data
+    with open(os.path.join(split_dir, f"{split}.txt"), 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/lpc/.local/lib/python3.10/site-packages/protonets/data/../../data/new_dataset/splits/new_split/trainval.txt'
+Traceback (most recent call last):
+  File "/home/lpc/Downloads/prototypical-networks/prototypical-networks/scripts/train/few_shot/run_train_test.py", line 69, in <module>
+    main(args)
+  File "/home/lpc/Downloads/prototypical-networks/prototypical-networks/scripts/train/few_shot/train_testWB.py", line 53, in main
+    data = data_utils.load(opt, ['trainval'])
+  File "/home/lpc/.local/lib/python3.10/site-packages/protonets/utils/data.py", line 8, in load
+    ds = protonets.data.custom_data_loader.load_data(opt, splits)
+  File "/home/lpc/.local/lib/python3.10/site-packages/protonets/data/custom_data_loader.py", line 109, in load_data
+    with open(os.path.join(split_dir, f"{split}.txt"), 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/lpc/.local/lib/python3.10/site-packages/protonets/data/../../data/new_dataset/splits/new_split/trainval.txt'

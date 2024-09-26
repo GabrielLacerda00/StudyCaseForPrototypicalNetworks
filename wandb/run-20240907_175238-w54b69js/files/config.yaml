@@ -1,0 +1,104 @@
+wandb_version: 1
+
+data.dataset:
+  desc: null
+  value: new_dataset
+data.split:
+  desc: null
+  value: new_split
+data.way:
+  desc: null
+  value: 5
+data.shot:
+  desc: null
+  value: 5
+data.query:
+  desc: null
+  value: 5
+data.test_way:
+  desc: null
+  value: 5
+data.test_shot:
+  desc: null
+  value: 0
+data.test_query:
+  desc: null
+  value: 0
+data.train_episodes:
+  desc: null
+  value: 100
+data.test_episodes:
+  desc: null
+  value: 100
+data.trainval:
+  desc: null
+  value: false
+data.sequential:
+  desc: null
+  value: false
+data.cuda:
+  desc: null
+  value: true
+model.model_name:
+  desc: null
+  value: protonet_conv
+model.x_dim:
+  desc: null
+  value: 1,28,28
+model.hid_dim:
+  desc: null
+  value: 224
+model.z_dim:
+  desc: null
+  value: 224
+train.epochs:
+  desc: null
+  value: 1000
+train.optim_method:
+  desc: null
+  value: Adam
+train.learning_rate:
+  desc: null
+  value: 0.001
+train.decay_every:
+  desc: null
+  value: 20
+train.weight_decay:
+  desc: null
+  value: 0.0
+train.patience:
+  desc: null
+  value: 200
+log.fields:
+  desc: null
+  value: loss,acc
+log.exp_dir:
+  desc: null
+  value: results
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.12
+    cli_version: 0.17.8
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1725742358
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 2
+      - 16
+      - 23
+      4: 3.10.12
+      5: 0.17.8
+      8:
+      - 5
+      13: linux-x86_64

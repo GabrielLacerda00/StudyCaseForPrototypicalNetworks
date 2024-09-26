@@ -1,0 +1,1326 @@
+2024-09-07 18:42:52,504 INFO    StreamThr :5187 [internal.py:wandb_internal():85] W&B internal server running at pid: 5187, started at: 2024-09-07 18:42:52.503536
+2024-09-07 18:42:52,505 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: status
+2024-09-07 18:42:52,508 INFO    WriterThread:5187 [datastore.py:open_for_write():87] open: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/run-ypvd17bo.wandb
+2024-09-07 18:42:52,508 DEBUG   SenderThread:5187 [sender.py:send():391] send: header
+2024-09-07 18:42:52,513 DEBUG   SenderThread:5187 [sender.py:send():391] send: run
+2024-09-07 18:42:53,120 INFO    SenderThread:5187 [dir_watcher.py:__init__():211] watching files in: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files
+2024-09-07 18:42:53,120 INFO    SenderThread:5187 [sender.py:_start_run_threads():1200] run started: ypvd17bo with start time 1725745372.503994
+2024-09-07 18:42:53,128 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: run_start
+2024-09-07 18:42:53,353 DEBUG   HandlerThread:5187 [system_info.py:__init__():26] System info init
+2024-09-07 18:42:53,354 DEBUG   HandlerThread:5187 [system_info.py:__init__():41] System info init done
+2024-09-07 18:42:53,354 INFO    HandlerThread:5187 [system_monitor.py:start():194] Starting system monitor
+2024-09-07 18:42:53,354 INFO    SystemMonitor:5187 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-07 18:42:53,354 INFO    HandlerThread:5187 [system_monitor.py:probe():214] Collecting system info
+2024-09-07 18:42:53,354 INFO    SystemMonitor:5187 [interfaces.py:start():188] Started cpu monitoring
+2024-09-07 18:42:53,355 INFO    SystemMonitor:5187 [interfaces.py:start():188] Started disk monitoring
+2024-09-07 18:42:53,356 INFO    SystemMonitor:5187 [interfaces.py:start():188] Started gpu monitoring
+2024-09-07 18:42:53,356 INFO    SystemMonitor:5187 [interfaces.py:start():188] Started memory monitoring
+2024-09-07 18:42:53,356 INFO    SystemMonitor:5187 [interfaces.py:start():188] Started network monitoring
+2024-09-07 18:42:53,363 DEBUG   HandlerThread:5187 [system_info.py:probe():152] Probing system
+2024-09-07 18:42:53,365 DEBUG   HandlerThread:5187 [system_info.py:_probe_git():137] Probing git
+2024-09-07 18:42:53,369 DEBUG   HandlerThread:5187 [system_info.py:_probe_git():145] Probing git done
+2024-09-07 18:42:53,369 DEBUG   HandlerThread:5187 [system_info.py:probe():200] Probing system done
+2024-09-07 18:42:53,369 DEBUG   HandlerThread:5187 [system_monitor.py:probe():223] {'os': 'Linux-6.8.0-40-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-09-07T21:42:53.363666', 'startedAt': '2024-09-07T21:42:52.497762', 'docker': None, 'cuda': None, 'args': ('--data.cuda',), 'state': 'running', 'program': '/home/lpc/Downloads/prototypical-networks/prototypical-networks/scripts/train/few_shot/run_train_test.py', 'codePathLocal': 'scripts/train/few_shot/run_train_test.py', 'codePath': 'scripts/train/few_shot/run_train_test.py', 'git': {'remote': 'https://github.com/jakesnell/prototypical-networks.git', 'commit': 'c9bb4d258267c11cb6e23f0a19242d24ca98ad8a'}, 'email': None, 'root': '/home/lpc/Downloads/prototypical-networks/prototypical-networks', 'host': 'lpc-System-Product-Name', 'username': 'lpc', 'executable': '/usr/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3509.7126875000004, 'min': 400.0, 'max': 4673.0}, 'cpu_freq_per_core': [{'current': 400.0, 'min': 400.0, 'max': 4673.0}, {'current': 400.0, 'min': 400.0, 'max': 4673.0}, {'current': 3577.453, 'min': 400.0, 'max': 4673.0}, {'current': 4471.413, 'min': 400.0, 'max': 4673.0}, {'current': 4062.309, 'min': 400.0, 'max': 4673.0}, {'current': 4477.23, 'min': 400.0, 'max': 4673.0}, {'current': 3558.8, 'min': 400.0, 'max': 4673.0}, {'current': 3555.073, 'min': 400.0, 'max': 4673.0}, {'current': 3563.098, 'min': 400.0, 'max': 4673.0}, {'current': 3575.223, 'min': 400.0, 'max': 4673.0}, {'current': 3559.859, 'min': 400.0, 'max': 4673.0}, {'current': 4455.888, 'min': 400.0, 'max': 4673.0}, {'current': 4112.451, 'min': 400.0, 'max': 4673.0}, {'current': 4456.471, 'min': 400.0, 'max': 4673.0}, {'current': 3563.901, 'min': 400.0, 'max': 4673.0}, {'current': 400.0, 'min': 400.0, 'max': 4673.0}], 'disk': {'/': {'total': 804.8438720703125, 'used': 4.856201171875}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 31.13707733154297}}
+2024-09-07 18:42:53,369 INFO    HandlerThread:5187 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-07 18:42:53,369 INFO    HandlerThread:5187 [system_monitor.py:probe():227] Publishing system info
+2024-09-07 18:42:53,370 INFO    HandlerThread:5187 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-07 18:42:53,373 DEBUG   SenderThread:5187 [sender.py:send():391] send: files
+2024-09-07 18:42:53,373 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-09-07 18:42:53,453 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-07 18:42:53,453 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-07 18:42:53,453 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: python_packages
+2024-09-07 18:42:53,453 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-07 18:42:53,454 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: stop_status
+2024-09-07 18:42:53,816 DEBUG   SenderThread:5187 [sender.py:send():391] send: telemetry
+2024-09-07 18:42:54,121 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/requirements.txt
+2024-09-07 18:42:54,122 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:42:54,122 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-metadata.json
+2024-09-07 18:42:54,392 INFO    wandb-upload_0:5187 [upload_job.py:push():130] Uploaded file /tmp/tmp_1t2u2_4wandb/n6tcuipb-wandb-metadata.json
+2024-09-07 18:42:56,121 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:42:58,121 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:42:58,173 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: status_report
+2024-09-07 18:42:58,291 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:42:58,291 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:42:58,292 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:42:58,292 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:42:58,292 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:42:58,293 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:42:58,293 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:42:58,293 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:42:58,789 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:42:58,790 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:42:58,790 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:42:58,790 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:42:58,791 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:42:58,791 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:42:58,791 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:42:58,791 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:42:59,122 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:42:59,275 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:42:59,275 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:42:59,275 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:42:59,275 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:42:59,276 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:42:59,276 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:42:59,276 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:42:59,276 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:42:59,762 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:42:59,762 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:42:59,762 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:42:59,763 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:42:59,763 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:42:59,763 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:42:59,763 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:42:59,763 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:00,122 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:00,122 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:00,241 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:00,242 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:00,242 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:00,242 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:00,243 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:00,243 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:00,243 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:00,243 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:00,740 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:00,741 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:00,741 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:00,741 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:00,742 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:00,742 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:00,742 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:00,742 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:01,122 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:01,228 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:01,228 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:01,228 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:01,228 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:01,229 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:01,229 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:01,229 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:01,229 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:01,710 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:01,711 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:01,711 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:01,711 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:01,712 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:01,712 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:01,712 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:01,712 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:02,122 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:02,123 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:02,186 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:02,187 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:02,187 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:02,187 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:02,188 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:02,188 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:02,188 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:02,188 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:02,695 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:02,695 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:02,696 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:02,696 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:02,696 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:02,696 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:02,696 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:02,697 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:03,123 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:03,159 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:03,160 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:03,160 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:03,161 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:03,161 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:03,161 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:03,161 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:03,161 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:03,175 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: status_report
+2024-09-07 18:43:03,454 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-07 18:43:03,621 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:03,622 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:03,622 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:03,622 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:03,623 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:03,623 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:03,623 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:03,623 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:04,107 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:04,108 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:04,108 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:04,108 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:04,108 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:04,109 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:04,109 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:04,109 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:04,123 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:04,123 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:04,587 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:04,587 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:04,588 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:04,588 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:04,588 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:04,589 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:04,589 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:04,589 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:05,050 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:05,051 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:05,051 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:05,051 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:05,052 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:05,052 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:05,052 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:05,052 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:05,123 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:05,535 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:05,536 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:05,536 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:05,541 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:05,548 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:05,549 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:05,549 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:05,549 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:06,015 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:06,016 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:06,016 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:06,016 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:06,017 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:06,017 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:06,017 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:06,017 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:06,123 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:06,124 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:06,489 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:06,490 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:06,490 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:06,490 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:06,491 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:06,491 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:06,491 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:06,491 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:06,954 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:06,955 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:06,955 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:06,955 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:06,956 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:06,956 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:06,956 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:06,956 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:07,124 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:07,434 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:07,435 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:07,435 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:07,435 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:07,436 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:07,436 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:07,436 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:07,436 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:07,921 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:07,922 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:07,922 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:07,922 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:07,923 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:07,923 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:07,923 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:07,923 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:08,124 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:08,124 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:08,176 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: status_report
+2024-09-07 18:43:08,402 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:08,402 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:08,402 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:08,403 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:08,403 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:08,403 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:08,403 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:08,404 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:08,453 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-07 18:43:08,453 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: stop_status
+2024-09-07 18:43:08,893 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:08,893 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:08,893 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:08,893 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:08,894 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:08,894 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:08,894 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:08,894 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:09,158 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:09,379 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:09,379 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:09,379 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:09,380 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:09,380 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:09,380 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:09,381 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:09,381 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:09,873 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:09,873 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:09,874 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:09,874 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:09,874 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:09,875 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:09,875 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:09,875 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:10,159 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:10,159 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:10,333 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:10,334 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:10,334 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:10,334 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:10,335 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:10,335 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:10,335 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:10,335 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:10,805 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:10,805 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:10,805 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:10,805 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:10,806 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:10,806 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:10,806 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:10,806 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:11,159 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:11,268 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:11,268 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:11,269 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:11,269 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:11,270 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:11,270 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:11,270 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:11,270 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:11,762 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:11,762 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:11,763 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:11,763 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:11,763 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:11,763 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:11,763 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:11,764 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:12,159 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:12,159 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:12,234 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:12,234 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:12,235 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:12,235 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:12,235 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:12,235 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:12,235 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:12,236 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:12,714 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:12,714 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:12,714 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:12,715 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:12,715 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:12,715 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:12,715 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:12,716 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:13,159 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:13,177 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: status_report
+2024-09-07 18:43:13,195 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:13,195 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:13,196 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:13,196 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:13,196 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:13,196 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:13,196 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:13,196 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:13,454 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-07 18:43:13,687 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:13,688 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:13,688 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:13,688 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:13,689 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:13,689 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:13,689 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:13,689 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:14,160 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:14,160 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:14,184 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:14,184 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:14,185 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:14,185 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:14,185 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:14,186 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:14,186 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:14,186 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:14,659 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:14,659 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:14,660 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:14,660 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:14,660 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:14,661 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:14,661 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:14,661 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:15,125 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:15,126 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:15,126 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:15,126 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:15,127 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:15,127 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:15,127 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:15,127 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:15,160 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:15,618 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:15,619 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:15,619 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:15,620 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:15,620 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:15,620 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:15,620 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:15,621 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:16,100 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:16,100 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:16,101 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:16,101 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:16,101 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:16,101 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:16,102 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:16,102 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:16,160 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:16,160 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:16,580 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:16,580 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:16,581 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:16,581 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:16,581 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:16,581 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:16,581 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:16,581 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:17,077 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:17,077 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:17,077 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:17,078 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:17,078 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:17,078 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:17,078 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:17,079 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:17,160 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:17,576 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:17,577 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:17,577 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:17,577 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:17,578 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:17,578 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:17,578 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:17,578 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:18,066 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:18,066 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:18,066 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:18,066 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:18,067 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:18,067 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:18,067 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:18,067 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:18,161 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:18,161 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:18,178 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: status_report
+2024-09-07 18:43:18,576 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:18,577 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:18,577 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:18,578 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:18,579 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:18,579 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:18,579 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:18,579 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:19,021 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:19,021 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:19,022 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:19,022 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:19,022 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:19,022 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:19,022 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:19,023 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:19,161 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:19,495 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:19,495 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:19,496 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:19,496 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:19,496 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:19,497 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:19,497 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:19,497 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:19,985 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:19,985 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:19,986 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:19,986 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:19,986 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:19,986 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:19,986 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:19,987 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:20,161 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:20,161 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:20,466 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:20,466 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:20,467 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:20,467 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:20,467 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:20,468 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:20,468 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:20,468 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:20,943 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:20,944 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:20,944 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:20,944 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:20,945 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:20,945 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:20,945 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:20,945 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:21,161 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:21,426 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:21,427 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:21,427 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:21,427 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:21,428 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:21,428 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:21,428 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:21,428 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:21,926 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:21,926 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:21,927 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:21,927 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:21,927 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:21,927 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:21,927 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:21,927 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:22,174 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:22,174 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:22,405 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:22,405 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:22,405 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:22,405 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:22,406 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:22,406 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:22,406 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:22,406 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:22,891 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:22,891 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:22,892 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:22,892 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:22,892 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:22,893 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:22,893 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:22,893 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:23,174 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:23,183 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: status_report
+2024-09-07 18:43:23,358 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:23,359 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:23,395 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:23,395 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:23,395 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:23,396 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:23,396 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:23,396 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:23,453 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-07 18:43:23,453 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: stop_status
+2024-09-07 18:43:23,454 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-07 18:43:23,868 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:23,869 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:23,869 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:23,870 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:23,870 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:23,870 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:23,870 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:23,871 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:24,204 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:24,204 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:24,204 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/config.yaml
+2024-09-07 18:43:24,303 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:24,304 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:24,304 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:24,304 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:24,305 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:24,305 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:24,305 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:24,305 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:24,758 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:24,758 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:24,758 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:24,759 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:24,759 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:24,759 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:24,759 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:24,760 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:25,204 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:25,235 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:25,235 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:25,235 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:25,236 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:25,236 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:25,236 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:25,236 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:25,237 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:25,708 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:25,709 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:25,709 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:25,709 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:25,710 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:25,710 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:25,710 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:25,710 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:26,197 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:26,197 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:26,198 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:26,198 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:26,198 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:26,198 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:26,198 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:26,228 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:26,230 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:26,230 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:26,685 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:26,686 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:26,686 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:26,686 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:26,686 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:26,687 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:26,687 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:26,687 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:27,152 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:27,153 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:27,153 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:27,153 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:27,154 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:27,154 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:27,154 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:27,154 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:27,230 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:27,607 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:27,607 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:27,608 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:27,608 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:27,608 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:27,609 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:27,609 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:27,609 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:28,072 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:28,072 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:28,073 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:28,073 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:28,073 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:28,073 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:28,074 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:28,074 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:28,261 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:28,261 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:28,396 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: status_report
+2024-09-07 18:43:28,555 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:28,556 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:28,556 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:28,556 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:28,557 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:28,557 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:28,557 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:28,557 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:29,015 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:29,015 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:29,016 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:29,016 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:29,016 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:29,017 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:29,017 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:29,017 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:29,261 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:29,498 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:29,498 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:29,498 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:29,498 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:29,499 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:29,499 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:29,499 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:29,499 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:29,988 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:29,988 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:29,988 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:29,989 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:29,989 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:29,989 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:29,989 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:29,990 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:30,292 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:30,292 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:30,512 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:30,512 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:30,513 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:30,513 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:30,513 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:30,513 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:30,513 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:30,514 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:31,015 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:31,015 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:31,016 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:31,016 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:31,016 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:31,016 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:31,016 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:31,017 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:31,292 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:31,519 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:31,520 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:31,520 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:31,520 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:31,521 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:31,521 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:31,521 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:31,521 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:32,047 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:32,047 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:32,048 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:32,048 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:32,048 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:32,048 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:32,048 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:32,049 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:32,293 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:32,294 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:32,691 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:32,691 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:32,691 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:32,692 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:32,692 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:32,692 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:32,692 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:32,692 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:33,223 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:33,223 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:33,223 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:33,223 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:33,224 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:33,224 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:33,224 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:33,224 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:33,293 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:33,293 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:33,398 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: status_report
+2024-09-07 18:43:33,454 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-07 18:43:33,704 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:33,705 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:33,705 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:33,705 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:33,706 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:33,706 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:33,706 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:33,706 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:34,205 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:34,206 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:34,206 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:34,206 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:34,207 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:34,207 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:34,207 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:34,207 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:34,293 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:34,293 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:34,705 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:34,705 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:34,705 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:34,706 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:34,706 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:34,706 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:34,706 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:34,706 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:35,199 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:35,199 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:35,200 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:35,200 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:35,200 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:35,201 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:35,201 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:35,201 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:35,293 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:35,294 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:35,701 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:35,701 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:35,701 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:35,702 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:35,702 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:35,702 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:35,702 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:35,702 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:36,191 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:36,191 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:36,191 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:36,192 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:36,192 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:36,192 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:36,192 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:36,193 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:36,294 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:36,294 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:36,690 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:36,690 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:36,690 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:36,691 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:36,691 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:36,691 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:36,691 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:36,691 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:37,180 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:37,180 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:37,180 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:37,180 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:37,181 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:37,181 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:37,181 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:37,181 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:37,294 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:37,294 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:37,679 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:37,679 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:37,679 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:37,680 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:37,680 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:37,680 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:37,681 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:37,681 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:38,159 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:38,159 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:38,160 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:38,160 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:38,160 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:38,161 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:38,161 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:38,161 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:38,294 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:38,295 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:38,399 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: status_report
+2024-09-07 18:43:38,453 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-07 18:43:38,454 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: stop_status
+2024-09-07 18:43:38,661 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:38,662 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:38,705 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:38,705 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:38,705 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:38,705 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:38,705 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:38,706 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:39,144 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:39,145 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:39,145 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:39,145 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:39,145 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:39,146 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:39,146 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:39,146 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:39,295 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:39,295 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:39,632 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:39,633 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:39,633 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:39,633 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:39,634 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:39,634 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:39,634 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:39,634 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:40,110 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:40,110 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:40,110 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:40,111 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:40,111 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:40,111 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:40,111 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:40,112 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:40,295 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:40,295 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:40,592 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:40,593 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:40,593 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:40,593 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:40,594 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:40,594 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:40,594 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:40,594 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:41,120 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:41,120 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:41,121 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:41,121 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:41,121 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:41,122 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:41,122 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:41,122 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:41,295 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:41,296 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:41,599 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:41,600 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:41,600 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:41,601 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:41,601 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:41,601 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:41,601 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:41,602 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:42,104 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:42,104 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:42,105 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:42,105 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:42,106 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:42,106 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:42,106 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:42,106 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:42,296 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:42,296 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:42,602 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:42,603 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:42,603 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:42,603 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:42,604 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:42,615 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:42,616 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:42,616 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:43,159 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:43,159 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:43,160 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:43,160 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:43,160 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:43,160 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:43,160 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:43,161 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:43,296 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:43,296 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:43,403 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: status_report
+2024-09-07 18:43:43,454 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-07 18:43:43,648 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:43,648 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:43,648 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:43,649 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:43,649 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:43,649 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:43,649 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:43,650 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:44,132 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:44,132 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:44,133 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:44,133 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:44,133 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:44,134 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:44,134 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:44,134 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:44,296 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:44,296 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:44,603 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:44,604 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:44,604 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:44,604 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:44,605 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:44,605 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:44,605 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:44,605 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:45,106 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:45,106 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:45,106 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:45,107 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:45,107 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:45,107 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:45,107 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:45,108 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:45,296 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:45,297 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:45,595 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:45,596 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:45,596 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:45,596 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:45,597 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:45,597 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:45,597 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:45,597 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:46,101 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:46,102 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:46,102 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:46,103 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:46,103 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:46,103 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:46,103 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:46,103 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:46,297 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:46,297 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:46,612 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:46,613 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:46,613 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:46,613 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:46,613 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:46,614 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:46,614 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:46,614 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:47,112 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:47,112 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:47,112 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:47,113 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:47,113 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:47,113 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:47,113 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:47,113 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:47,297 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:47,297 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:47,610 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:47,610 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:47,611 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:47,611 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:47,611 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:47,611 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:47,611 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:47,612 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:48,117 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:48,118 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:48,118 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:48,118 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:48,119 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:48,119 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:48,119 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:48,119 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:48,297 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:48,297 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:48,405 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: status_report
+2024-09-07 18:43:48,577 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:48,577 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:48,578 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:48,578 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:48,578 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:48,579 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:48,579 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:48,579 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:49,050 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:49,050 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:49,051 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:49,051 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:49,051 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:49,051 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:49,052 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:49,052 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:49,298 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:49,298 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:49,539 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:49,539 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:49,540 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:49,540 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:49,540 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:49,541 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:49,541 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:49,541 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:50,045 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:50,046 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:50,046 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:50,046 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:50,046 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:50,047 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:50,047 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:50,047 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:50,305 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:50,305 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:50,548 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:50,549 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:50,549 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:50,550 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:50,550 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:50,550 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:50,550 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:50,551 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:51,056 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:51,056 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:51,057 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:51,057 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:51,057 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:51,057 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:51,057 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:51,058 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:51,305 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:51,306 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:51,562 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:51,562 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:51,563 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:51,563 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:51,563 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:51,564 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:51,564 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:51,564 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:52,044 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:52,044 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:52,045 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:52,045 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:52,045 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:52,045 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:52,046 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:52,046 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:52,305 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:52,306 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:52,523 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:52,523 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:52,523 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:52,524 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:52,524 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:52,524 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:52,525 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:52,529 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:53,005 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:53,005 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:53,006 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:53,006 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:53,006 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:53,006 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:53,007 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:53,007 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:53,306 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:53,306 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:53,357 DEBUG   SystemMonitor:5187 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-07 18:43:53,358 DEBUG   SenderThread:5187 [sender.py:send():391] send: stats
+2024-09-07 18:43:53,454 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-07 18:43:53,454 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-07 18:43:53,454 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: stop_status
+2024-09-07 18:43:53,514 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:53,515 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:53,715 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:53,715 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: status_report
+2024-09-07 18:43:53,715 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:53,715 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:53,716 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:53,716 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:53,716 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:54,002 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:54,002 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:54,003 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:54,003 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:54,003 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:54,004 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:54,004 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:54,004 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:54,306 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:54,306 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:54,487 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:54,487 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:54,488 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:54,488 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:54,488 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:54,489 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:54,489 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:54,489 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:54,992 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:54,993 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:54,994 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:54,994 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:54,994 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:54,994 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:54,994 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:54,995 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:55,306 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:55,307 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:55,487 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:55,488 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:55,488 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:55,488 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:55,489 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:55,489 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:55,489 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:55,489 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:55,991 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:55,992 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:55,992 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:55,992 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:55,992 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:55,993 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:55,993 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:55,993 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:56,307 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:56,307 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:56,467 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:56,467 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:56,467 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:56,467 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:56,468 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:56,468 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:56,468 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:56,468 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:56,968 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:56,968 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:56,969 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:56,969 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:56,969 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:56,970 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:56,970 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:56,970 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:57,307 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:57,307 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:57,445 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:57,446 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:57,446 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:57,447 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:57,447 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:57,447 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:57,447 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:57,447 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:57,935 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:57,936 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:57,936 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:57,937 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:57,937 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:57,937 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:57,937 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:57,937 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:58,307 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:58,308 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:58,434 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:58,434 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:58,434 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:58,435 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:58,435 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:58,435 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:58,435 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:58,436 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:58,717 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: status_report
+2024-09-07 18:43:58,910 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:58,910 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:58,910 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:58,911 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:58,911 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:58,911 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:58,911 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:58,912 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:59,308 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:43:59,308 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:43:59,382 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:59,382 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-07 18:43:59,382 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:59,382 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:59,383 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:59,383 DEBUG   SenderThread:5187 [sender.py:send():391] send: history
+2024-09-07 18:43:59,383 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: summary_record
+2024-09-07 18:43:59,383 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:59,842 DEBUG   SenderThread:5187 [sender.py:send():391] send: exit
+2024-09-07 18:43:59,843 INFO    SenderThread:5187 [sender.py:send_exit():598] handling exit code: 255
+2024-09-07 18:43:59,843 INFO    SenderThread:5187 [sender.py:send_exit():600] handling runtime: 66
+2024-09-07 18:43:59,843 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:59,843 INFO    SenderThread:5187 [sender.py:send_exit():606] send defer
+2024-09-07 18:43:59,843 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: defer
+2024-09-07 18:43:59,843 INFO    HandlerThread:5187 [handler.py:handle_request_defer():184] handle defer: 0
+2024-09-07 18:43:59,843 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: defer
+2024-09-07 18:43:59,843 INFO    SenderThread:5187 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-09-07 18:43:59,843 INFO    SenderThread:5187 [sender.py:transition_state():626] send defer: 1
+2024-09-07 18:43:59,843 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: defer
+2024-09-07 18:43:59,844 INFO    HandlerThread:5187 [handler.py:handle_request_defer():184] handle defer: 1
+2024-09-07 18:43:59,844 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: defer
+2024-09-07 18:43:59,844 INFO    SenderThread:5187 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-09-07 18:43:59,844 INFO    SenderThread:5187 [sender.py:transition_state():626] send defer: 2
+2024-09-07 18:43:59,844 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: defer
+2024-09-07 18:43:59,844 INFO    HandlerThread:5187 [handler.py:handle_request_defer():184] handle defer: 2
+2024-09-07 18:43:59,844 INFO    HandlerThread:5187 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-07 18:43:59,844 DEBUG   SystemMonitor:5187 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-07 18:43:59,844 DEBUG   SystemMonitor:5187 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-07 18:43:59,844 INFO    HandlerThread:5187 [interfaces.py:finish():200] Joined cpu monitor
+2024-09-07 18:43:59,845 INFO    HandlerThread:5187 [interfaces.py:finish():200] Joined disk monitor
+2024-09-07 18:43:59,908 INFO    HandlerThread:5187 [interfaces.py:finish():200] Joined gpu monitor
+2024-09-07 18:43:59,909 INFO    HandlerThread:5187 [interfaces.py:finish():200] Joined memory monitor
+2024-09-07 18:43:59,909 INFO    HandlerThread:5187 [interfaces.py:finish():200] Joined network monitor
+2024-09-07 18:43:59,909 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: defer
+2024-09-07 18:43:59,909 INFO    SenderThread:5187 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-09-07 18:43:59,909 INFO    SenderThread:5187 [sender.py:transition_state():626] send defer: 3
+2024-09-07 18:43:59,909 DEBUG   SenderThread:5187 [sender.py:send():391] send: stats
+2024-09-07 18:43:59,910 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: defer
+2024-09-07 18:43:59,910 INFO    HandlerThread:5187 [handler.py:handle_request_defer():184] handle defer: 3
+2024-09-07 18:43:59,910 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: defer
+2024-09-07 18:43:59,910 INFO    SenderThread:5187 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-09-07 18:43:59,910 INFO    SenderThread:5187 [sender.py:transition_state():626] send defer: 4
+2024-09-07 18:43:59,910 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: defer
+2024-09-07 18:43:59,910 INFO    HandlerThread:5187 [handler.py:handle_request_defer():184] handle defer: 4
+2024-09-07 18:43:59,910 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: defer
+2024-09-07 18:43:59,910 INFO    SenderThread:5187 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-09-07 18:43:59,910 INFO    SenderThread:5187 [sender.py:transition_state():626] send defer: 5
+2024-09-07 18:43:59,910 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: defer
+2024-09-07 18:43:59,910 INFO    HandlerThread:5187 [handler.py:handle_request_defer():184] handle defer: 5
+2024-09-07 18:43:59,910 DEBUG   SenderThread:5187 [sender.py:send():391] send: summary
+2024-09-07 18:43:59,911 INFO    SenderThread:5187 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-07 18:43:59,911 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: defer
+2024-09-07 18:43:59,911 INFO    SenderThread:5187 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-09-07 18:43:59,911 INFO    SenderThread:5187 [sender.py:transition_state():626] send defer: 6
+2024-09-07 18:43:59,911 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: defer
+2024-09-07 18:43:59,911 INFO    HandlerThread:5187 [handler.py:handle_request_defer():184] handle defer: 6
+2024-09-07 18:43:59,911 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: defer
+2024-09-07 18:43:59,911 INFO    SenderThread:5187 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-09-07 18:43:59,911 INFO    SenderThread:5187 [sender.py:transition_state():626] send defer: 7
+2024-09-07 18:43:59,911 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: status_report
+2024-09-07 18:43:59,911 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: defer
+2024-09-07 18:43:59,912 INFO    HandlerThread:5187 [handler.py:handle_request_defer():184] handle defer: 7
+2024-09-07 18:43:59,912 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: defer
+2024-09-07 18:43:59,912 INFO    SenderThread:5187 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-09-07 18:44:00,308 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:44:00,308 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:44:00,843 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-07 18:44:01,309 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:44:01,987 INFO    SenderThread:5187 [sender.py:transition_state():626] send defer: 8
+2024-09-07 18:44:01,987 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: poll_exit
+2024-09-07 18:44:01,987 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: defer
+2024-09-07 18:44:01,988 INFO    HandlerThread:5187 [handler.py:handle_request_defer():184] handle defer: 8
+2024-09-07 18:44:01,988 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: defer
+2024-09-07 18:44:01,988 INFO    SenderThread:5187 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-09-07 18:44:01,988 INFO    SenderThread:5187 [job_builder.py:build():443] Attempting to build job artifact
+2024-09-07 18:44:01,988 INFO    SenderThread:5187 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-09-07 18:44:02,003 INFO    SenderThread:5187 [job_builder.py:build():548] adding wandb-job metadata file
+2024-09-07 18:44:02,005 INFO    SenderThread:5187 [sender.py:transition_state():626] send defer: 9
+2024-09-07 18:44:02,005 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: defer
+2024-09-07 18:44:02,006 INFO    HandlerThread:5187 [handler.py:handle_request_defer():184] handle defer: 9
+2024-09-07 18:44:02,006 DEBUG   SenderThread:5187 [sender.py:send():391] send: artifact
+2024-09-07 18:44:02,309 INFO    Thread-12 :5187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:44:02,843 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-07 18:44:03,093 INFO    SenderThread:5187 [sender.py:send_artifact():1549] sent artifact job-https___github.com_jakesnell_prototypical-networks.git_scripts_train_few_shot_run_train_test.py - {'id': 'QXJ0aWZhY3Q6MTE5MzQyNzI3Nw==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQyOTc5OTE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTE5MzQ1MzA0Ng==', 'versionIndex': 1}}}
+2024-09-07 18:44:03,093 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: defer
+2024-09-07 18:44:03,093 INFO    SenderThread:5187 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-09-07 18:44:03,093 INFO    SenderThread:5187 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-07 18:44:03,310 INFO    SenderThread:5187 [dir_watcher.py:finish():388] scan: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files
+2024-09-07 18:44:03,310 INFO    SenderThread:5187 [dir_watcher.py:finish():402] scan save: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/config.yaml config.yaml
+2024-09-07 18:44:03,310 INFO    SenderThread:5187 [dir_watcher.py:finish():402] scan save: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/requirements.txt requirements.txt
+2024-09-07 18:44:03,310 INFO    SenderThread:5187 [dir_watcher.py:finish():402] scan save: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-metadata.json wandb-metadata.json
+2024-09-07 18:44:03,310 INFO    SenderThread:5187 [dir_watcher.py:finish():402] scan save: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json wandb-summary.json
+2024-09-07 18:44:03,310 INFO    SenderThread:5187 [dir_watcher.py:finish():402] scan save: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log output.log
+2024-09-07 18:44:03,315 INFO    SenderThread:5187 [sender.py:transition_state():626] send defer: 10
+2024-09-07 18:44:03,316 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: poll_exit
+2024-09-07 18:44:03,316 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: defer
+2024-09-07 18:44:03,317 INFO    HandlerThread:5187 [handler.py:handle_request_defer():184] handle defer: 10
+2024-09-07 18:44:03,317 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: defer
+2024-09-07 18:44:03,317 INFO    SenderThread:5187 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-09-07 18:44:03,317 INFO    SenderThread:5187 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-07 18:44:03,812 INFO    wandb-upload_1:5187 [upload_job.py:push():130] Uploaded file /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/config.yaml
+2024-09-07 18:44:03,844 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-07 18:44:03,844 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: poll_exit
+2024-09-07 18:44:03,970 INFO    wandb-upload_0:5187 [upload_job.py:push():130] Uploaded file /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/requirements.txt
+2024-09-07 18:44:04,096 INFO    wandb-upload_2:5187 [upload_job.py:push():130] Uploaded file /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/wandb-summary.json
+2024-09-07 18:44:04,844 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-07 18:44:04,845 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: poll_exit
+2024-09-07 18:44:04,965 INFO    wandb-upload_3:5187 [upload_job.py:push():130] Uploaded file /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/files/output.log
+2024-09-07 18:44:05,165 INFO    Thread-11 (_thread_body):5187 [sender.py:transition_state():626] send defer: 11
+2024-09-07 18:44:05,166 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: defer
+2024-09-07 18:44:05,166 INFO    HandlerThread:5187 [handler.py:handle_request_defer():184] handle defer: 11
+2024-09-07 18:44:05,166 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: defer
+2024-09-07 18:44:05,166 INFO    SenderThread:5187 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-09-07 18:44:05,166 INFO    SenderThread:5187 [file_pusher.py:join():175] waiting for file pusher
+2024-09-07 18:44:05,167 INFO    SenderThread:5187 [sender.py:transition_state():626] send defer: 12
+2024-09-07 18:44:05,167 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: defer
+2024-09-07 18:44:05,167 INFO    HandlerThread:5187 [handler.py:handle_request_defer():184] handle defer: 12
+2024-09-07 18:44:05,167 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: defer
+2024-09-07 18:44:05,167 INFO    SenderThread:5187 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-09-07 18:44:05,167 INFO    SenderThread:5187 [file_stream.py:finish():601] file stream finish called
+2024-09-07 18:44:05,389 INFO    SenderThread:5187 [file_stream.py:finish():605] file stream finish is done
+2024-09-07 18:44:05,389 INFO    SenderThread:5187 [sender.py:transition_state():626] send defer: 13
+2024-09-07 18:44:05,389 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: defer
+2024-09-07 18:44:05,390 INFO    HandlerThread:5187 [handler.py:handle_request_defer():184] handle defer: 13
+2024-09-07 18:44:05,390 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: defer
+2024-09-07 18:44:05,390 INFO    SenderThread:5187 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-09-07 18:44:05,390 INFO    SenderThread:5187 [sender.py:transition_state():626] send defer: 14
+2024-09-07 18:44:05,390 DEBUG   SenderThread:5187 [sender.py:send():391] send: final
+2024-09-07 18:44:05,390 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: defer
+2024-09-07 18:44:05,390 DEBUG   SenderThread:5187 [sender.py:send():391] send: footer
+2024-09-07 18:44:05,390 INFO    HandlerThread:5187 [handler.py:handle_request_defer():184] handle defer: 14
+2024-09-07 18:44:05,391 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: defer
+2024-09-07 18:44:05,391 INFO    SenderThread:5187 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-09-07 18:44:05,391 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-07 18:44:05,391 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: poll_exit
+2024-09-07 18:44:05,391 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: server_info
+2024-09-07 18:44:05,392 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-07 18:44:05,392 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: get_summary
+2024-09-07 18:44:05,392 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: sampled_history
+2024-09-07 18:44:05,392 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: server_info
+2024-09-07 18:44:05,393 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-07 18:44:05,595 DEBUG   SenderThread:5187 [sender.py:send_request():418] send_request: poll_exit
+2024-09-07 18:44:05,596 INFO    MainThread:5187 [wandb_run.py:_footer_history_summary_info():4078] rendering history
+2024-09-07 18:44:05,596 INFO    MainThread:5187 [wandb_run.py:_footer_history_summary_info():4110] rendering summary
+2024-09-07 18:44:05,596 INFO    MainThread:5187 [wandb_run.py:_footer_sync_info():4037] logging synced files
+2024-09-07 18:44:05,596 DEBUG   HandlerThread:5187 [handler.py:handle_request():158] handle_request: shutdown
+2024-09-07 18:44:05,596 INFO    HandlerThread:5187 [handler.py:finish():884] shutting down handler
+2024-09-07 18:44:06,392 INFO    WriterThread:5187 [datastore.py:close():296] close: /home/lpc/Downloads/prototypical-networks/prototypical-networks/wandb/run-20240907_184252-ypvd17bo/run-ypvd17bo.wandb
+2024-09-07 18:44:06,596 INFO    SenderThread:5187 [sender.py:finish():1631] shutting down sender
+2024-09-07 18:44:06,596 INFO    SenderThread:5187 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-07 18:44:06,596 INFO    SenderThread:5187 [file_pusher.py:join():175] waiting for file pusher

@@ -1,0 +1,175 @@
+{
+    "os": "Linux-6.8.0-40-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-09-19T23:03:49.350437",
+    "startedAt": "2024-09-19T23:03:48.770967",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--data.dataset",
+        "new_dataset",
+        "--data.split",
+        "new_split",
+        "--data.way",
+        "8",
+        "--data.shot",
+        "5",
+        "--data.query",
+        "5",
+        "--data.test_way",
+        "0",
+        "--data.test_shot",
+        "0",
+        "--data.test_query",
+        "0",
+        "--data.train_episodes",
+        "100",
+        "--data.test_episodes",
+        "100",
+        "--data.trainval",
+        "--data.cuda",
+        "--model.model_name",
+        "protonet_conv",
+        "--model.x_dim",
+        "1,28,28",
+        "--model.hid_dim",
+        "224",
+        "--model.z_dim",
+        "224",
+        "--train.epochs",
+        "284",
+        "--train.optim_method",
+        "Adam",
+        "--train.learning_rate",
+        "0.001",
+        "--train.decay_every",
+        "20",
+        "--train.weight_decay",
+        "0.0",
+        "--train.patience",
+        "200",
+        "--log.fields",
+        "loss,acc",
+        "--log.exp_dir",
+        "results/trainval"
+    ],
+    "state": "running",
+    "program": "/home/lpc/Downloads/prototypical-networks/prototypical-networks/scripts/train/few_shot/run_train_test.py",
+    "codePathLocal": "scripts/train/few_shot/run_train_test.py",
+    "codePath": "scripts/train/few_shot/run_train_test.py",
+    "git": {
+        "remote": "https://github.com/jakesnell/prototypical-networks.git",
+        "commit": "c9bb4d258267c11cb6e23f0a19242d24ca98ad8a"
+    },
+    "email": null,
+    "root": "/home/lpc/Downloads/prototypical-networks/prototypical-networks",
+    "host": "lpc-System-Product-Name",
+    "username": "lpc",
+    "executable": "/home/lpc/Downloads/prototypical-networks/prototypical-networks/fslenv/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 4173.2799374999995,
+        "min": 400.0,
+        "max": 4673.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3614.222,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 4178.872,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3619.273,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3621.849,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 4508.693,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3611.693,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3602.236,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3611.612,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3616.92,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 4517.074,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3613.313,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 4450.166,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 4516.936,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3609.87,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3619.234,
+            "min": 400.0,
+            "max": 4673.0
+        },
+        {
+            "current": 3614.81,
+            "min": 400.0,
+            "max": 4673.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 601.38623046875,
+            "used": 4.8798828125
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 31.13707733154297
+    }
+}
