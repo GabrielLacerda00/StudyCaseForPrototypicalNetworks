@@ -2,7 +2,7 @@
  
 Este código é uma adaptação do código utilizado no artigo "Prototypical Networks for Few Shot Learning" ([paper](https://arxiv.org/abs/1703.05175), [code](https://github.com/jakesnell/prototypical-networks)). Este repositório contém os resultados das avaliações utilizando Few-Shot Learning em um modelo de Redes Prototípicas para classificação de documentos. Foram realizados experimentos com diferentes configurações, utilizando uma estrutura de 5 classes e variação no número de exemplos e consultas por classe. 
 
-Este experimento foi realizado em um ambiente Ubuntu 22.04.4 LTS com uma GeForce RTX 4090.
+Este experimento foi realizado em um ambiente Ubuntu 22.04.4 LTS.
 
 
 ## Few-Shot Learning - Resultados dos Experimentos - Relatórios de Classificação
@@ -20,7 +20,9 @@ Este experimento foi realizado em um ambiente Ubuntu 22.04.4 LTS com uma GeForce
 **F1-Score Médio**: 0.74  
 **Acurácia**: 0.744 +/- 0.0065  
 **Perda (Loss)**: 0.695 +/- 0.0203
+
 **Memória(MB)**: 2.681,375 Mb
+
 **Tempo(Minutos)**: 21 min 35s
 
 
@@ -39,8 +41,10 @@ Este experimento foi realizado em um ambiente Ubuntu 22.04.4 LTS com uma GeForce
 **F1-Score Médio**: 0.87  
 **Acurácia**: 0.874 +/- 0.0043  
 **Perda (Loss)**: 0.403 +/- 0.0112
-**Memória(MB)**: 2.965,250 Mb
-**Tempo(Minutos)**: 18min 46s
+
+**Memória (MB)**: 2.965,250 Mb
+
+**Tempo (Minutos)**: 18min 46s
 
 ---
 
@@ -57,8 +61,10 @@ Este experimento foi realizado em um ambiente Ubuntu 22.04.4 LTS com uma GeForce
 **F1-Score Médio**: 0.71  
 **Acurácia**: 0.711 +/- 0.0074  
 **Perda (Loss)**: 0.825 +/- 0.0280
-**Memória(MB)**: 3.378,812 MB
-**Tempo(Minutos)**: 23min e 21 s
+
+**Memória (MB)**: 3.378,812 MB
+
+**Tempo (Minutos)**: 23min e 21 s
 
 ---
 
@@ -75,8 +81,10 @@ Este experimento foi realizado em um ambiente Ubuntu 22.04.4 LTS com uma GeForce
 **F1-Score Médio**: 0.86  
 **Acurácia**: 0.856 +/- 0.0040  
 **Perda (Loss)**: 0.487 +/- 0.0142
-**Memória(MB)**: 3.380,500 MB
-**Tempo(Minutos)**: 22 min e 49 s
+
+**Memória (MB)**: 3.380,500 MB
+
+**Tempo (Minutos)**: 22 min e 49 s
 
 ---
 
