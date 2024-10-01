@@ -87,6 +87,7 @@ Este experimento foi realizado em um ambiente Ubuntu 22.04.4 LTS.
 **Tempo (Minutos)**: 22 min e 49 s
 
 ---
+Observações: Recomendamos instalar as dependencias requisitadas no repositório original [code](https://github.com/jakesnell/prototypical-networks)).
 
 ## Como Reproduzir
 1. Crie um ambiente Python:
