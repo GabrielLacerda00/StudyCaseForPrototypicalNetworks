@@ -20,6 +20,8 @@ Este experimento foi realizado em um ambiente Ubuntu 22.04.4 LTS com uma GeForce
 **F1-Score Médio**: 0.74  
 **Acurácia**: 0.744 +/- 0.0065  
 **Perda (Loss)**: 0.695 +/- 0.0203
+**Memória(MB)**: 2.681,375 Mb
+**Tempo(Minutos)**: 21 min 35s
 
 
 ---
@@ -37,7 +39,8 @@ Este experimento foi realizado em um ambiente Ubuntu 22.04.4 LTS com uma GeForce
 **F1-Score Médio**: 0.87  
 **Acurácia**: 0.874 +/- 0.0043  
 **Perda (Loss)**: 0.403 +/- 0.0112
-
+**Memória(MB)**: 2.965,250 Mb
+**Tempo(Minutos)**: 18min 46s
 
 ---
 
@@ -54,7 +57,8 @@ Este experimento foi realizado em um ambiente Ubuntu 22.04.4 LTS com uma GeForce
 **F1-Score Médio**: 0.71  
 **Acurácia**: 0.711 +/- 0.0074  
 **Perda (Loss)**: 0.825 +/- 0.0280
-
+**Memória(MB)**: 3.378,812 MB
+**Tempo(Minutos)**: 23min e 21 s
 
 ---
 
@@ -71,7 +75,8 @@ Este experimento foi realizado em um ambiente Ubuntu 22.04.4 LTS com uma GeForce
 **F1-Score Médio**: 0.86  
 **Acurácia**: 0.856 +/- 0.0040  
 **Perda (Loss)**: 0.487 +/- 0.0142
-
+**Memória(MB)**: 3.380,500 MB
+**Tempo(Minutos)**: 22 min e 49 s
 
 ---
 
